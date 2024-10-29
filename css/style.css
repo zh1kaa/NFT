@@ -46,7 +46,7 @@ button {
 #header {
   position: sticky;
   top: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.185);
   z-index: 99;
 }
@@ -230,21 +230,30 @@ p {
     margin-bottom: 150px;
     margin-right: 160px;
   }
-  .box-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    img {
-      width: 65%;
-    }
+}
+.knopka {
+  display: none;
+  width: 315px;
+  height: 60px;
+  background: none;
+  border: 2px solid#A259FF;
+  ion-icon {
+    color: #a259ff;
   }
-  .text {
-    text-align: center;
-    line-height: 30px;
-    p span {
-      color: #858584;
-    }
+}
+.box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 65%;
+  }
+}
+.text {
+  line-height: 30px;
+  p span {
+    color: #858584;
   }
 }
 
