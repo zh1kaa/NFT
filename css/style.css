@@ -4,6 +4,7 @@
   text-decoration: none;
   border: none;
   font-family: Work Sans;
+  /* outline: 1px solid orangered; */
 }
 html {
   background: #2b2b2b;
@@ -44,7 +45,6 @@ button {
 }
 #header .container {
   max-width: 1260px;
-  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -156,7 +156,10 @@ button {
   max-width: 40px;
   width: 100%;
 }
-
+.small {
+  max-width: 549px;
+  width: 582px;
+}
 .small {
   display: flex;
   gap: 10px;
@@ -173,10 +176,19 @@ p {
   align-items: center;
   gap: 10px;
 }
+#creator {
+  padding-block: 90px;
+}
 .creator-title {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding-bottom: 50px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .creator-btn button {
     width: 247px;
     height: 50px;
@@ -187,21 +199,44 @@ p {
     }
   }
 }
+.creator {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
 .creator .box {
   width: 240px;
   height: 238px;
   background: #3b3b3b;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: #2b2b2b;
-    margin-right: 150px;
+    position: relative;
+    position: absolute;
+    margin-bottom: 150px;
+    margin-right: 160px;
+  }
+  .box-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 65%;
+    }
+  }
+  .text {
+    text-align: center;
+    line-height: 30px;
+    p span {
+      color: #858584;
+    }
   }
 }

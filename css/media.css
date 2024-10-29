@@ -43,15 +43,61 @@
       max-width: 270px;
       width: 100%;
     }
+
     .ret-text {
-      gap: 10px;
+      gap: 20px;
       .img {
         display: none;
+      }
+      h3 {
+        width: 75%;
+      }
+    }
+    .ret-text {
+      .get-long {
+        display: flex;
+        gap: 55px;
       }
     }
   }
   .trend .box:nth-child(3) {
     display: none;
+  }
+  .creator .box:nth-child(7) {
+    display: none;
+  }
+  .creator .box:nth-child(8) {
+    display: none;
+  }
+  .creator .box:nth-child(9) {
+    display: none;
+  }
+  .creator .box:nth-child(10) {
+    display: none;
+  }
+  .creator .box:nth-child(11) {
+    display: none;
+  }
+  .creator .box:nth-child(12) {
+    display: none;
+  }
+  .creator .box .box-text {
+    display: flex;
+    flex-direction: row;
+  }
+  .creator .box {
+    width: 294px;
+    height: 122px;
+    button {
+      margin-bottom: 67px;
+      margin-right: 218px;
+    }
+    .box-text {
+      justify-content: center;
+      img {
+        width: 28%;
+      }
+    }
   }
 }
 @media (max-width: 640px) {
@@ -62,7 +108,7 @@
     display: none;
   }
   .ret-text {
-    gap: 20px;
+    gap: 40px;
     img {
       display: flex;
     }
@@ -82,24 +128,47 @@
     & .ret-text {
       .get-long {
         display: flex;
-        gap: 126px;
+        gap: 162px;
       }
     }
   }
+  .small {
+    max-width: 528px;
+    width: 577px;
+  }
+  .trend .box img {
+    max-width: 1076px;
+    width: 100%;
+  }
+  .trend .box {
+    width: 100%;
+  }
+  .trend .box:nth-child(2) {
+    display: none;
+  }
   .get {
-    & .ret-text {
+    img {
+      max-width: 642px;
+      width: 100%;
+    }
+  }
+  .get {
+    .ret-text {
       button {
-        max-width: 400px;
+        max-width: 644px;
         width: 100%;
         height: 60px;
       }
     }
   }
-  .trend .box:nth-child(2) {
-    display: none;
-  }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 430px) {
+  .container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
   .get {
     img {
       max-width: 380px;
@@ -116,11 +185,14 @@
     }
   }
   .get {
-    & .ret-text {
+    .ret-text {
       .get-long {
         display: flex;
         gap: 116px;
       }
     }
+  }
+  .small {
+    width: 386px;
   }
 }
