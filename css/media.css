@@ -5,7 +5,6 @@
     }
   }
 }
-
 @media (max-width: 1280px) {
   .ret-text img {
     display: none;
@@ -113,11 +112,6 @@
       display: flex;
     }
   }
-
-  .small {
-    max-width: 528px;
-    width: 577px;
-  }
   .trend .box img {
     max-width: 1076px;
     width: 100%;
@@ -138,16 +132,16 @@
     padding: 0;
     margin: 0 auto;
   }
-  .get {
+  .ret-text {
     img {
-      max-width: 387px;
+      max-width: 664px;
       width: 100%;
     }
   }
   .get {
     .ret-text {
       button {
-        max-width: 380px;
+        max-width: 556px;
         width: 100%;
         height: 60px;
       }
@@ -157,35 +151,39 @@
     .ret-text {
       .get-long {
         display: flex;
-        gap: 116px;
+        justify-content: space-between;
       }
     }
   }
   .small {
-    width: 386px;
+    display: flex;
+    justify-content: space-between;
   }
   #trend {
-    padding-block: 2px;
+    padding-block: 45px;
+  }
+  .trend-title {
+    line-height: 38px;
+    padding-bottom: 31px;
   }
 }
-
 @media (max-width: 430px) {
   .get {
-    & .ret-text {
+    .ret-text {
       .get-long {
         display: flex;
-        gap: 99px;
+        justify-content: space-between;
       }
     }
   }
   .get {
     img {
-      max-width: 343px;
+      max-width: 400px;
       width: 100%;
     }
   }
   .get {
-    & .ret-text {
+    .ret-text {
       button {
         max-width: 342px;
         width: 100%;
@@ -198,7 +196,8 @@
     padding-bottom: 21px;
   }
   .small {
-    width: 342px;
+    display: flex;
+    justify-content: space-between;
   }
   #trend {
     padding-block: -2px;
