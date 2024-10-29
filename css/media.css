@@ -171,14 +171,14 @@
   }
   .get {
     img {
-      max-width: 380px;
+      max-width: 333px;
       width: 100%;
     }
   }
   .get {
     & .ret-text {
       button {
-        max-width: 380px;
+        max-width: 333px;
         width: 100%;
         height: 60px;
       }
@@ -188,11 +188,11 @@
     .ret-text {
       .get-long {
         display: flex;
-        gap: 116px;
+        gap: 95px;
       }
     }
   }
   .small {
-    width: 386px;
+    width: 333px;
   }
 }
