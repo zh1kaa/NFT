@@ -100,7 +100,7 @@
     }
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   #get {
     padding-block: 30px;
   }
