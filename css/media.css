@@ -113,25 +113,7 @@
       display: flex;
     }
   }
-  .get {
-    img {
-      max-width: 400px;
-      width: 100%;
-    }
-  }
-  .get {
-    .ret-text {
-      gap: 20px;
-    }
-  }
-  .get {
-    & .ret-text {
-      .get-long {
-        display: flex;
-        gap: 162px;
-      }
-    }
-  }
+
   .small {
     max-width: 528px;
     width: 577px;
@@ -146,24 +128,11 @@
   .trend .box:nth-child(2) {
     display: none;
   }
-  .get {
-    img {
-      max-width: 642px;
-      width: 100%;
-    }
+  #header .container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
   }
-  .get {
-    .ret-text {
-      button {
-        max-width: 644px;
-        width: 100%;
-        height: 60px;
-      }
-    }
-  }
-}
-
-@media (max-width: 430px) {
   .container {
     width: 90%;
     padding: 0;
@@ -171,12 +140,12 @@
   }
   .get {
     img {
-      max-width: 380px;
+      max-width: 387px;
       width: 100%;
     }
   }
   .get {
-    & .ret-text {
+    .ret-text {
       button {
         max-width: 380px;
         width: 100%;
@@ -194,5 +163,44 @@
   }
   .small {
     width: 386px;
+  }
+  #trend {
+    padding-block: 2px;
+  }
+}
+
+@media (max-width: 430px) {
+  .get {
+    & .ret-text {
+      .get-long {
+        display: flex;
+        gap: 99px;
+      }
+    }
+  }
+  .get {
+    img {
+      max-width: 343px;
+      width: 100%;
+    }
+  }
+  .get {
+    & .ret-text {
+      button {
+        max-width: 342px;
+        width: 100%;
+        height: 60px;
+      }
+    }
+  }
+  .trend-title {
+    line-height: 35px;
+    padding-bottom: 21px;
+  }
+  .small {
+    width: 342px;
+  }
+  #trend {
+    padding-block: -2px;
   }
 }
