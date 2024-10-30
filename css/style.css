@@ -4,22 +4,25 @@
   text-decoration: none;
   border: none;
   font-family: Work Sans;
-  /* outline: 1px solid orangered; */
+  outline: 1px solid orangered;
 }
 html {
   background: #2b2b2b;
 }
 h1 {
+  width: 100%;
   font-size: clamp(22px, 1.042rem + 1.67vw, 38px);
   color: #fff;
   font-weight: 600;
 }
 h2 {
+  width: 100%;
   font-size: clamp(14px, 0.708rem + 0.83vw, 22px);
   color: #fff;
   font-weight: 600;
 }
 h3 {
+  width: 70%;
   font-size: clamp(10px, 0.708rem + 0.83vw, 22px);
   color: #fff;
   font-weight: 400;
@@ -44,24 +47,32 @@ button {
   }
 }
 #header {
-  display: none;
+  /* display: none; */
   position: sticky;
   top: 0;
   backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.185);
   z-index: 99;
 }
-#header .container {
+.container {
   max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* #header .container {
+  max-width: 1380px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-}
+} */
 .header {
   padding-block: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  /* margin: 0 auto; */
   nav {
     display: flex;
     align-items: center;
@@ -91,12 +102,6 @@ button {
 }
 #get {
   padding-block: 80px;
-}
-.container {
-  max-width: 1280px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 .get {
   display: flex;
@@ -166,14 +171,15 @@ button {
   width: 100%;
 }
 .small {
-  max-width: 549px;
-  width: 582px;
+  /* max-width: 549px;
+  width: 582px; */
+  /* width: 100px;
+  height: 100px; */
 }
 .small {
   display: flex;
   gap: 10px;
-  /* justify-content: space-between; */
-  width: 100%;
+  justify-content: space-between;
   img {
     max-width: 10px;
     width: 90%;

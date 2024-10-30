@@ -1,46 +1,43 @@
-@media (max-width: 1700px) {
+@media (max-width: 1780px) {
   .ret-text img {
     display: none;
-  }
-  .get {
-    img {
-      max-width: 470px;
-      width: 100%;
-    }
-  }
-
-  .small {
-    img {
-      max-width: 10px;
-      width: 90%;
-      height: 84%;
-    }
   }
   .knopka {
     display: none;
   }
 }
-@media (max-width: 1024) {
+@media (max-width: 1280px) {
   #header {
     width: 100%;
   }
+  /* #header .container {
+    width: 98%;
+  } */
   .ret-text img {
     display: none;
-  }
-  .get {
-    img {
-      max-width: 470px;
-      width: 100%;
-    }
   }
 
   .small {
     img {
       max-width: 10px;
       width: 90%;
-      height: 84%;
+      height: 74%;
     }
   }
+  #get {
+    .get {
+      img {
+        max-width: 375px;
+        width: 100%;
+      }
+    }
+    .get {
+      .ret-text {
+        gap: 20px;
+      }
+    }
+  }
+
   .knopka {
     display: none;
   }
@@ -59,25 +56,27 @@
     display: flex;
     background: none;
   }
-  .get {
-    img {
-      max-width: 270px;
-      width: 100%;
-    }
+  #get {
+    .get {
+      img {
+        max-width: 290px;
+        width: 100%;
+      }
 
-    .ret-text {
-      gap: 20px;
-      .img {
-        display: none;
+      .ret-text {
+        gap: 20px;
+        .img {
+          display: none;
+        }
+        h3 {
+          width: 75%;
+        }
       }
-      h3 {
-        width: 75%;
-      }
-    }
-    .ret-text {
-      .get-long {
-        display: flex;
-        gap: 55px;
+      .ret-text {
+        .get-long {
+          display: flex;
+          gap: 55px;
+        }
       }
     }
   }
@@ -131,10 +130,14 @@
   .get img {
     display: none;
   }
-  .ret-text {
-    gap: 40px;
-    img {
-      display: flex;
+  #get {
+    .ret-text {
+      gap: 40px;
+      img {
+        display: block;
+        max-width: 664px;
+        width: 100%;
+      }
     }
   }
   .trend .box img {
@@ -157,12 +160,7 @@
     padding: 0;
     margin: 0 auto;
   }
-  .ret-text {
-    img {
-      max-width: 664px;
-      width: 100%;
-    }
-  }
+
   .get {
     .ret-text {
       button {
