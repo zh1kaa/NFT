@@ -51,7 +51,7 @@ button {
   z-index: 99;
 }
 #header .container {
-  max-width: 1260px;
+  max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -268,6 +268,10 @@ p {
     padding: 10px 0 0 15px;
   }
 }
+.categorie-block-img img {
+  max-width: 1000px;
+  width: 100%;
+}
 .categorie-blur {
   position: absolute;
   top: 0;
@@ -286,4 +290,77 @@ p {
 }
 #categorie {
   padding: 50px 0;
+}
+#nft {
+  padding-block: 100px;
+  height: 120vh;
+}
+.nft-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 50px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nft-btn button {
+    width: 247px;
+    height: 50px;
+    background: none;
+    border: 2px solid#A259FF;
+    ion-icon {
+      color: #a259ff;
+    }
+  }
+}
+.nft {
+  display: flex;
+  justify-content: space-between;
+  .box {
+    display: flex;
+    flex-direction: column;
+    .wert {
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+  .box-block {
+    width: 270px;
+    height: 150px;
+    background: #3b3b3b;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* .nft .box .wert {
+  img {
+    max-width: 100px;
+    width: 100%;
+  }
+} */
+.block-text {
+  line-height: 40px;
+}
+.nft-img {
+  display: flex;
+  gap: 20px;
+  p {
+    font-family: Space Mono;
+  }
+}
+.nft-text {
+  display: flex;
+  justify-content: space-between;
+  .litle {
+    line-height: 30px;
+    h6 {
+      color: #858584;
+    }
+  }
 }

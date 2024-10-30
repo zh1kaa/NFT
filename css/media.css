@@ -1,17 +1,4 @@
 @media (max-width: 1700px) {
-  .ret-text {
-    img {
-      display: none;
-    }
-  }
-  .ret-text img {
-    display: none;
-  }
-  .knopka {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
   .ret-text img {
     display: none;
   }
@@ -31,6 +18,37 @@
   }
   .knopka {
     display: none;
+  }
+}
+@media (max-width: 1024) {
+  #header {
+    width: 100%;
+  }
+  .ret-text img {
+    display: none;
+  }
+  .get {
+    img {
+      max-width: 470px;
+      width: 100%;
+    }
+  }
+
+  .small {
+    img {
+      max-width: 10px;
+      width: 90%;
+      height: 84%;
+    }
+  }
+  .knopka {
+    display: none;
+  }
+  .nft .box .wert {
+    img {
+      max-width: 10px;
+      width: 90%;
+    }
   }
 }
 @media (max-width: 840px) {
