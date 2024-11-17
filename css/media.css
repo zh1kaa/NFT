@@ -10,9 +10,6 @@
   #header {
     width: 100%;
   }
-  /* #header .container {
-    width: 98%;
-  } */
   .ret-text img {
     display: none;
   }
@@ -47,8 +44,77 @@
       width: 90%;
     }
   }
+  .categorie {
+    .box {
+      background: #3b3b3b;
+      max-width: 207px;
+      width: 100%;
+      border-radius: 30px;
+      height: 259px;
+      position: relative;
+    }
+  }
+  .categorie {
+    .box {
+      .position-box {
+        .icon-img {
+          position: absolute;
+          top: 50px;
+          left: 40px;
+          font-size: 125px;
+        }
+      }
+    }
+  }
 }
-@media (max-width: 840px) {
+@media (max-width: 1020px) {
+  .categorie {
+    .box {
+      background: #3b3b3b;
+      max-width: 167px;
+      width: 100%;
+      border-radius: 30px;
+      height: 219px;
+      position: relative;
+    }
+  }
+  .categorie {
+    & .box {
+      & .position-box {
+        .icon-img {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+  .magic {
+    .magic-img {
+      img {
+        position: absolute;
+        left: 493px;
+        top: 80px;
+      }
+    }
+  }
+  /* .categorie {
+    .box {
+      .position-box {
+        .icon-img {
+          top: 50px;
+          left: 108px;
+          font-size: 90px;
+        }
+      }
+    }
+  } */
+  .creator .box {
+    button {
+      margin-bottom: 161px;
+      margin-right: 148px;
+    }
+  }
+}
+@media (max-width: 841px) {
   .header nav {
     display: none;
   }
@@ -106,24 +172,117 @@
     flex-direction: row;
   }
   .creator .box {
-    width: 294px;
-    height: 122px;
+    width: 249px;
+    height: 115px;
+    padding-left: 15px;
     button {
-      margin-bottom: 67px;
-      margin-right: 218px;
+      margin-bottom: 49px;
+      margin-right: 228px;
     }
-    .box-text {
-      justify-content: center;
-      img {
-        width: 28%;
-      }
+    img {
+      width: 30%;
     }
   }
   .knopka {
     display: none;
   }
+  .categorie {
+    .box {
+      max-width: 121px;
+      width: 100%;
+      height: 175px;
+      .position-box {
+        .icon-img {
+          font-size: 75px;
+          position: absolute;
+          top: 30px;
+          left: 25px;
+        }
+      }
+    }
+  }
+  .nft .box:last-child {
+    display: none;
+  }
+  .work-box {
+    max-width: 340px;
+    width: 100%;
+    height: 364px;
+    gap: 20px;
+  }
+  #work {
+    padding-block: 25px;
+  }
+  .work-title {
+    padding-bottom: 10px;
+    line-height: 40px;
+  }
+  #join {
+    padding-block: 50px;
+  }
+  .join {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    opacity: 0px;
+    background: #3b3b3b;
+    gap: 20px;
+    img {
+      max-width: 200px;
+      width: 100%;
+      justify-content: center;
+    }
+    .creator .box {
+      width: 249px;
+      height: 112px;
+      padding-left: 15px;
+      background: #3b3b3b;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box-text {
+      img {
+        width: 30%;
+      }
+    }
+    .join-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        width: 80%;
+      }
+      p {
+        line-height: 25px;
+      }
+      .join-input {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        input {
+          max-width: 199px;
+          width: 100%;
+          height: 45px;
+          border-radius: 20px;
+        }
+        button {
+          max-width: 199px;
+          height: 45px;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
-@media (max-width: 640px) {
+@media (max-width: 641px) {
   #get {
     padding-block: 30px;
   }
@@ -160,7 +319,6 @@
     padding: 0;
     margin: 0 auto;
   }
-
   .get {
     .ret-text {
       button {
@@ -193,7 +351,9 @@
     display: none;
   }
   .knopka {
-    display: flex;
+    display: block;
+    width: 580px;
+    height: 65px;
   }
   .creator .box {
     width: 580px;
@@ -202,61 +362,110 @@
   .creator {
     gap: 25px;
   }
-  .knopka {
-    width: 580px;
-    height: 65px;
-  }
   #creator {
     padding-block: 50px;
   }
   .creator-title {
+    padding-bottom: 40px;
     .text {
       gap: 18px;
     }
   }
-  .creator-title {
-    padding-bottom: 40px;
+  #categorie {
+    padding-block: 20px;
   }
-}
-@media (max-width: 430px) {
-  .get {
-    .ret-text {
-      .get-long {
-        display: flex;
-        justify-content: space-between;
-      }
+  .nft {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .nft .box:last-child {
+    display: block;
+  }
+  .nft-btn {
+    display: none;
+  }
+  .nft-button {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .nft-button button {
+    max-width: 707px;
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 2px solid#A259FF;
+    ion-icon {
+      color: #a259ff;
     }
   }
-  .get {
-    img {
-      max-width: 400px;
+  .work {
+    flex-direction: column;
+    .work-box {
+      flex-direction: row;
+      max-width: 340px;
       width: 100%;
-    }
-  }
-  .get {
-    .ret-text {
-      button {
-        max-width: 342px;
+      height: 364px;
+      gap: 20px;
+      img {
+        max-width: 180px;
         width: 100%;
-        height: 60px;
       }
     }
   }
-  .trend-title {
-    line-height: 35px;
-    padding-bottom: 21px;
+  #nft {
+    padding: 100px 0;
   }
-  .small {
+  .nft-title {
+    padding-bottom: 25px;
+  }
+
+  .magic-bottom {
+    /* flex-direction: column; */
+    .magic-left {
+      #foto {
+        display: block;
+      }
+    }
+  }
+  .magic-bottom .img-2 {
+    display: none;
+  }
+
+  .categorie {
+    .box {
+      max-width: 150px;
+      width: 100%;
+      height: 200px;
+      .position-box {
+        .icon-img {
+          position: absolute;
+          top: 30px;
+          left: 25px;
+          font-size: 75px;
+        }
+      }
+    }
+  }
+  .join {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    img {
+      justify-content: flex-start;
+    }
   }
-  #trend {
-    padding-block: -2px;
+  с .work {
+    display: flex;
+    flex-direction: column;
+    .work-box {
+      max-width: 340px;
+      width: 100%;
+      height: 364px;
+      gap: 20px;
+    }
   }
-  #creator {
-    padding-block: 10px;
-  }
-  .creator-title {
-    padding-bottom: 20px;
+  .work-text {
+    display: flex;
+    flex-direction: column;
   }
 }
